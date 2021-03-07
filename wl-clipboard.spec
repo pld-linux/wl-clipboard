@@ -24,7 +24,7 @@ Summary:	Bash completion for wl-clipboard
 Group:		Applications/Shells
 Requires:	%{name} = %{version}-%{release}
 Requires:	bash-completion >= 2.0
-%{?noarchpackage}
+BuildArch:	noarch
 
 %description -n bash-completion-wl-clipboard
 Bash completion for wl-clipboard.
@@ -34,7 +34,7 @@ Summary:	ZSH completion for wl-clipboard
 Group:		Applications/Shells
 Requires:	%{name} = %{version}-%{release}
 Requires:	zsh
-%{?noarchpackage}
+BuildArch:	noarch
 
 %description -n zsh-completion-wl-clipboard
 ZSH completion for wl-clipboard.
