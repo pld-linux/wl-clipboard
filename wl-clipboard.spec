@@ -9,6 +9,7 @@ Source0:	https://github.com/bugaevc/wl-clipboard/archive/v%{version}/%{name}-%{v
 URL:		https://github.com/bugaevc/wl-clipboard
 BuildRequires:	meson >= 0.44.0
 BuildRequires:	ninja
+BuildRequires:	rpm-build >= 4.6
 BuildRequires:	rpmbuild(macros) >= 1.752
 BuildRequires:	wayland-devel
 BuildRequires:	wayland-protocols >= 1.17
