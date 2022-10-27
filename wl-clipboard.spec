@@ -1,11 +1,11 @@
 Summary:	Command-line copy/paste utilities for Wayland
 Name:		wl-clipboard
-Version:	2.0.0
+Version:	2.1.0
 Release:	1
 License:	GPL v3+
 Group:		Applications
 Source0:	https://github.com/bugaevc/wl-clipboard/archive/v%{version}/%{name}-%{version}.tar.gz
-# Source0-md5:	cb34e27547e3ed7f70051933b76a39f4
+# Source0-md5:	e39e266bca009d00a9ab99c29eb41ebc
 URL:		https://github.com/bugaevc/wl-clipboard
 BuildRequires:	meson >= 0.44.0
 BuildRequires:	ninja
@@ -28,6 +28,16 @@ BuildArch:	noarch
 
 %description -n bash-completion-wl-clipboard
 Bash completion for wl-clipboard.
+
+%package -n fish-completion-wl-clipboard
+Summary:	fish-completion for wl-clipboard
+Group:		Applications/Shells
+Requires:	%{name} = %{version}-%{release}
+Requires:	fish
+BuildArch:	noarch
+
+%description -n fish-completion-wl-clipboard
+fish-completion for wl-clipboard.
 
 %package -n zsh-completion-wl-clipboard
 Summary:	ZSH completion for wl-clipboard
@@ -68,6 +78,11 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %{bash_compdir}/wl-copy
 %{bash_compdir}/wl-paste
+
+%files -n fish-completion-wl-clipboard
+%defattr(644,root,root,755)
+%{fish_compdir}/wl-copy.fish
+%{fish_compdir}/wl-paste.fish
 
 %files -n zsh-completion-wl-clipboard
 %defattr(644,root,root,755)
