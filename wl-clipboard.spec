@@ -24,7 +24,7 @@ clipboard and Unix pipes, sockets, files and so on.
 Summary:	Bash completion for wl-clipboard
 Group:		Applications/Shells
 Requires:	%{name} = %{version}-%{release}
-Requires:	bash-completion >= 2.0
+Requires:	bash-completion >= 1:2.0
 BuildArch:	noarch
 
 %description -n bash-completion-wl-clipboard
