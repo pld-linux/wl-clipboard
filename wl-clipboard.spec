@@ -1,11 +1,11 @@
 Summary:	Command-line copy/paste utilities for Wayland
 Name:		wl-clipboard
-Version:	2.2.0
+Version:	2.2.1
 Release:	1
 License:	GPL v3+
 Group:		Applications
 Source0:	https://github.com/bugaevc/wl-clipboard/archive/v%{version}/%{name}-%{version}.tar.gz
-# Source0-md5:	f8dd79c513d4ebf268bb6f7f11367099
+# Source0-md5:	9b128d99f5364e8bd0d3ddbfca9413d7
 URL:		https://github.com/bugaevc/wl-clipboard
 BuildRequires:	meson >= 0.47.0
 BuildRequires:	ninja
